@@ -5,7 +5,9 @@
 int main(int argc, char* argv[]) {
     // Controleer argumenten
     if (argc < 3) {
-        std::cerr << "Gebruik: helloworld_client.exe <topic> <gebruikersnaam>\n";
+        std::cerr << "Gebruik: Client <topic> <gebruikersnaam>\n";
+        std::cerr << "Beschikbare topics:\n";
+        std::cerr << "BjarniDobbelsteen\n";
         return 1;
     }
 
