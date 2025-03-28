@@ -17,13 +17,13 @@ sudo apt install libzmq3-dev libczmq-dev
 
 Voor **Windows** (MinGW):
 ```ssh
-g++ ClientSend.cpp -o ClientSend.exe -I/mingw64/include -L/mingw64/lib -lzmq
-g++ ClientResponse.cpp -o ClientResponse.exe -I/mingw64/include -L/mingw64/lib -lzmq
+g++ Service.cpp -o Service.exe -IC:\msys64\mingw64\include -LC:\msys64\mingw64\lib -lzmq
+g++ client.cpp -o Service.exe -IC:\msys64\mingw64\include -LC:\msys64\mingw64\lib -lzmq
 ```
 Voor **Linux:**
 ```ssh
-g++ ClientSend.cpp -o ClientSend -lzmq
-g++ ClientResponse.cpp -o ClientResponse -lzmq
+g++ service.cpp -o service -lzmq
+g++ client.cpp -o client -lzmq
 ```
 ## Uitvoeren
 
